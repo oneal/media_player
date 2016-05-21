@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.servicios.Main2Activity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="#111111">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="REPRODUCTOR MULTIMEDIA"
+            android:id="@+id/textView"
+            android:layout_gravity="center_horizontal"
+            android:padding="20dp"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:textAlignment="center" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/btnRew"
+                android:background="@drawable/btnrewind"
+                android:onClick="botonRewind"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="20dp" />
+
+            <ImageButton
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:id="@+id/btnStop"
+                android:layout_margin="5dp"
+                android:background="@drawable/btnstop"
+                android:onClick="botonStop"
+                android:layout_gravity="center_vertical" />
+
+            <ImageButton
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:id="@+id/btnPlay"
+                android:layout_margin="5dp"
+                android:background="@drawable/btnplay"
+                android:onClick="botonPlay"
+                android:layout_gravity="center_vertical" />
+
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/btnForw"
+                android:background="@drawable/btnavance"
+                android:onClick="botonAvance"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp">
+
+            <SeekBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/seekBar"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>
+

@@ -1,0 +1,10 @@
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.servicios.MainActivity">
+    <item android:id="@+id/playList"
+        android:icon="@android:drawable/ic_menu_mapmode"
+        android:title="Play List"
+        app:showAsAction="ifRoom"  />
+</menu>
